@@ -1,0 +1,109 @@
+:root{
+    --primary-color: #4a90e2;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --warning-color:#f1c40f;
+    --bg-color:#f8f9fa;
+}
+body{
+    font-family: "Inter",-apple-system,sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    padding-top:60px;
+
+}
+.todo-app{
+    background:white;
+    width:100%;
+    max-width:450px;
+    padding:2rem;
+    border-radius:14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+h1{
+    text-align: center;
+    color:#333;
+    margin-bottom:1.5rem;
+}
+.input-section{
+    display: flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+input{
+    flex:1;
+    padding:12px 15px;
+    border:2px solid #eee;
+    outline:none;
+    transition:border-color 0.3s;
+}
+input:focus{
+    border-color:var(--primary-color);
+}
+button{
+    padding:10px 10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition: transform 0.1s,opcity 0.2s;
+}
+button:active{
+    transform:scale(0.95);
+
+}
+#add-btn{
+    background:var(--primary-color);
+    color:white;
+}
+.filter-section{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    margin-bottom:25px;
+}
+.filter-btn{
+    background:#f0f0f0;
+    color:#666;
+    font-size:0.85rem;
+
+}
+.filter-btn.active{
+    background:var(--primary-color);
+    color:white;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:12px;
+    border-bottom:1px solid #f1f1f1;
+}
+li span{
+    cursor: pointer;
+    flex:1;
+    transition:0.2s;
+}
+li.completed span{
+    text-decoration: line-through;
+    color:#b0b0b0;
+}
+.actions{
+    display:flex;
+    gap:6px;
+}
+.edit-btn{
+    background:var(--warning-color);
+    color:white;
+    font-size:0.75rem;
+}
+.delete-btn{
+    background:var(--danger-color);
+    color:white;
+    font-size: 0.75rem;
+}
