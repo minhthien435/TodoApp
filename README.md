@@ -25,3 +25,8 @@ TodoApp/
 ├── style.css     # UI styling and layout
 ├── script.js     # Core logic and Local Storage handling
 └── README.md     # Project documentation
+```
+---
+## Demo Interface
+![Markdown Logo](./assets/image.png "Logo chính thức Markdown")
+
