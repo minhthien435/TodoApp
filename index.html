@@ -13,12 +13,25 @@
         </header>
         <div class="input-section">
             <input type="text" id="todo-input" placeholder="Things need to do...">
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="date" id="due-date-input">
             <button id="add-btn">Add Task</button>
+        </div>
+        <div class="search-section">
+            <input type="text" id="search-input" placeholder="🔍 Search tasks...">
         </div>
         <div class="filter-section">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="active">Active</button>
             <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <div class="task-info">
+            <span id="task-count">0 tasks remaining</span>
+            <button id="clear-completed-btn" class="clear-btn">Clear Completed</button>
         </div>
         <ul id="todo-list">
 
