@@ -107,3 +107,106 @@ li.completed span{
     color:white;
     font-size: 0.75rem;
 }
+
+.search-section{
+    margin-bottom: 20px;
+}
+#search-input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#search-input:focus{
+    border-color: var(--primary-color);
+}
+.task-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #f1f1f1;
+}
+#task-count{
+    color: #666;
+    font-size: 0.9rem;
+}
+.clear-btn{
+    background: var(--danger-color);
+    color: white;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+}
+#priority-select{
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background: white;
+}
+#priority-select:focus{
+    border-color: var(--primary-color);
+}
+#due-date-input{
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+#due-date-input:focus{
+    border-color: var(--primary-color);
+}
+li.priority-high{
+    border-left: 4px solid var(--danger-color);
+}
+li.priority-medium{
+    border-left: 4px solid var(--warning-color);
+}
+li.priority-low{
+    border-left: 4px solid var(--success-color);
+}
+li.overdue{
+    background-color: rgba(231, 76, 60, 0.1);
+}
+.task-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.task-content span:first-child{
+    flex: 1;
+}
+.priority-badge{
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.priority-badge.priority-high{
+    background: var(--danger-color);
+    color: white;
+}
+.priority-badge.priority-medium{
+    background: var(--warning-color);
+    color: white;
+}
+.priority-badge.priority-low{
+    background: var(--success-color);
+    color: white;
+}
+.due-date{
+    font-size: 0.8rem;
+    color: #666;
+}
+.overdue-text{
+    color: var(--danger-color);
+    font-weight: 600;
+}
